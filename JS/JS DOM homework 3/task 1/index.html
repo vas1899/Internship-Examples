@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <script src="js.task1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--the font type-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <div class="form__group">
+      <input type="text" class="form__input" id="inputid" placeholder="TO DO Things" required="" />
+      <label for="name" class="form__label">TO DO Things</label>
+    </div>
+   
+    <button id="addButton">ADD</button>
+
+    <section class="toDoBlock">
+        <h3>To Do List</h3>
+        <ul id = "toDoList">
+        </ul>
+    </section>
+   
+    <!-- This is when the eventListers start to work-->
+    <script> window.onload = startListen(); </script>
+</body>
+</html>

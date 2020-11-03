@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 10</title>
+</head>
+<body>
+    <script>
+        function noParameters(){
+            let length = arguments.length;
+            console.log('length: ' + length);
+            for (let i = 0; i < length; i++) {
+                console.log(arguments[i] + ' type - ' + typeof(arguments[i]));             
+            }
+            secondFunction("res");
+        }
+
+        noParameters(23, 36, 45, 2, 36, 5, 4);
+        noParameters(23.32, '36', 'fdf', '2', false, 5, 'f');
+        noParameters(2.3, '36', 45, 2, 'das', 'dd', 's');
+
+        secondFunction("res");
+        function secondFunction(arg){
+            console.log(`arg: ${arg}, arg2: ${this.arg}`);
+        }
+        console.log('with object:')
+        const obj1 = { arg: 'thisArg', secondFunction};
+        obj1.secondFunction("res");
+
+        console.log("call, apply:");
+        secondFunction.call({ name: '1' }, '2'); 
+        secondFunction.apply({ name: '1' }, ['2']);
+        secondFunction.call({}, '2'); 
+        secondFunction.apply({}, ['2']);
+    
+    </script>
+</body>
+</html>

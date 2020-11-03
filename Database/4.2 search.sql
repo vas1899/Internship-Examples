@@ -1,0 +1,14 @@
+-- 3 - d -i
+CREATE PROCEDURE LIKE_ITEM_NAME 
+AS
+BEGIN 
+DECLARE @result VARCHAR(100)
+	SELECT @result 
+	FROM Items
+	WHERE ItemName LIKE 'C%'
+	RETURN @result
+
+END
+GO
+
+EXEC LIKE_ITEM_NAME;

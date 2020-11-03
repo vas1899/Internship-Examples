@@ -1,0 +1,97 @@
+.page{
+    background-color: #fdafb1;
+}
+.header{
+    background-color: #9bd3c4;
+    margin: 10px;
+    height: 80px;
+}
+.footer{
+    background-color: #9bd3c4;
+    float: left;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header > h2, .footer > h2{
+    height: 90%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside{
+    background-color: #62b7b6;
+    float: left;
+    width: 30%;
+    margin: 10px;
+    height: 450px;
+}
+.aside > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.article{
+    background-color: #fb7c7c;
+    float: left;
+    width: 67%;
+    margin: 10px;
+    height: 450px;
+}
+.article > h2{
+    margin-top: 180px;
+}
+.link_image{
+    text-decoration: none;
+}
+.link_image > img{
+    margin: 10px 60px 10px 65px;
+    max-width:20%;
+    height:auto;
+}
+.mobile_link_image{
+    text-decoration: none;
+    display: none;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.clear_button{
+    font-size: 25px;
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+}
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .link_image, .aside{
+        display: none;
+    }
+    .article > h2{
+        margin-top: 0px;
+    }
+    .mobile_link_image{
+        text-decoration: none;
+        display: block;
+    }
+    .mobile_link_image > img{
+        max-width:50%;
+        height:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .article >img{
+        max-width: 100%;
+        height:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

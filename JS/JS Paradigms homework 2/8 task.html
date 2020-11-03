@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 8</title>
+</head>
+<body>
+    <script>
+        let test1 = ['Isacc / 25 / Apple, GravityGun',
+                    'Derek / 12 / BarrelVest, DestructionSword',
+                    'Hes / 1 / Desolator, Sentinel, Antara'
+                    ];
+
+        test1.forEach( i => heroes(i));
+        function heroes(input){
+            let text = input.replace(/[^A-Za-z0-9\s]/g,"").replace(/\s{2,}/g, " ");
+            let heroRawInfo = text.split(' ');
+            let heroesInformation = new Map();
+            let itemsHeroes =[];
+            let length = heroRawInfo.length;
+            for (let i = 2; i < length; i++) {
+                itemsHeroes.push(heroRawInfo[i]);                
+            }
+            heroesInformation.set('hero', {name: heroRawInfo[0], level: heroRawInfo[1], items: itemsHeroes});
+            console.log(heroesInformation);
+        }
+    </script>
+</body>
+</html>

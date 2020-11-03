@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6</title>
+</head>
+<body>
+    <script>
+        let text1 = "Big";
+        let text2 = "small";
+
+        function checkIfBig(text){
+            let firstChar = text.charAt(0);
+            let regex = /[A-Z]/;
+            if(regex.test(firstChar))
+                console.log("UpperCase");
+            else
+                console.log("lowerCase");
+        }
+
+        checkIfBig(text1);
+        checkIfBig(text2);
+    </script>
+</body>
+</html>

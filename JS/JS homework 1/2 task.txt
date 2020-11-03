@@ -1,0 +1,3 @@
+In JS the null type is an object. 
+It is considered to be a bug that typeof null is an object
+and instanceof Object returns false because null has no constructor, no properties.

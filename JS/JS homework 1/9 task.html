@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 9</title>
+    <style>
+        input {
+            width: 25px;
+        }
+        button{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    C: <input type="text" id="C" value="10">
+    <button onclick="C()">Button</button>
+    F: <input type="text" id="F" value="10">
+    <button onclick="F()">Button</button>
+    km/h: <input type="text" id="km" value="10">
+    <button onclick="km()">Button</button>
+    m/h: <input type="text" id="m" value="10">
+    <button onclick="m()">Button</button>
+    gallons: <input type="text" id="gallons" value="10">
+    <button onclick="gallons()">Button</button>
+    liters: <input type="text" id="liters" value="10">
+    <button onclick="liters()">Button</button>
+    <br>
+    <p id="result"></p>
+    <script>
+        function C() {
+         let C = document.getElementById("C").value;
+         document.getElementById("result").innerHTML = C + ' C = ' + ((C * 9/5) + 32) + " F";
+        }
+        function F() {
+          let F = document.getElementById("F").value;
+          document.getElementById("result").innerHTML = (F + ' F = ' + ((F - 32) * 5/9)  + " C");
+        }
+        function km() {
+          let km = document.getElementById("km").value;
+          document.getElementById("result").innerHTML = (km + ' km/h = ' + (km/1.609)  + " m/h");
+        }
+        function m() {
+          let m = document.getElementById("m").value;
+          document.getElementById("result").innerHTML = (m + ' m/h = ' + (m*1.609)  + " km/h");
+        }
+        function gallons() {
+          let gallons = document.getElementById("gallons").value;
+          document.getElementById("result").innerHTML = (gallons + ' gallons = ' + (gallons*3.785)  + " liters");
+        }
+        function liters() {
+          let liters = document.getElementById("liters").value;
+          document.getElementById("result").innerHTML = (liters + ' liters = ' + (liters/3.785)  + " gallons");
+        }
+
+
+    </script>
+    
+</body>
+</html>

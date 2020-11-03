@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <script> 
+    let a = 3;
+    let b = 4;
+    let c = 5;
+
+    if(a > b && b > c){
+        console.log(a +' > '+ b +' > ' + c); 
+        document.write(a +' > '+ b +' > ' + c);  
+    }else if(b < c && a > c){
+        console.log(a +' > '+ c +' > ' + b); 
+        document.write(a +' > '+ c +' > ' + b);
+    }else if(a < b && b < c){
+        console.log(c +' > '+ b +' > ' + a); 
+        document.write(c +' > '+ b +' > ' + a);
+    }else if(a > b && a < c){
+        console.log(c +' > '+ a +' > ' + b); 
+        document.write(c +' > '+ a +' > ' + b); 
+    }else if(a < b && a > c){
+        console.log(b +' > '+ a +' > ' + c); 
+        document.write(b +' > '+ a +' > ' + c); 
+    }else{
+        console.log(b +' > '+ c +' > ' + a); 
+        document.write(b +' > '+ c +' > ' + a); 
+    }
+    </script> 
+</body>
+</html>

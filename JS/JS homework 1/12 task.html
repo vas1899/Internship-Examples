@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 12</title>
+</head>
+<body>
+    <script>
+        function precise_round(input, places){
+            let round_up;
+            let rounder
+            let decimal_part = input % 1;
+            for (let index = 0; index < places; index++)
+                decimal_part *= 10;
+            decimal_part %= 1;
+            rounder = decimal_part > 0? (decimal_part >= 0.5 ? 1 : 0) : (decimal_part >= -0.5 ? 0 : 1);
+            for (let index = 0; index < places; index++) {
+                decimal_part /= 10;
+                rounder /= 10;
+            }
+            return (input - (decimal_part - (input > 0 ? rounder: - rounder )));
+        }
+        console.log(precise_round(12.375,2));
+        console.log(precise_round(12.37499,2));
+        console.log(precise_round(-10.3079499, 3));
+
+    </script>
+</body>
+</html>

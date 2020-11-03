@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <script>
+    let weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    let today = new Date();
+    let day_of_the_week = today.getDay();
+    let time_AM_PM = (today.getHours() > 12) ? (today.getHours()- 12) + " PM " : today.getHours() + " AM ";
+
+    console.log('Today is : ' + weekday[day_of_the_week] +'<br>' +
+    time_AM_PM + ":" + today.getMinutes() + ":" + today.getSeconds()); 
+    document.write('Today is : ' + weekday[day_of_the_week] +'<br>' + 
+    time_AM_PM + " : " + today.getMinutes() + " : " + today.getSeconds());
+    </script>
+</body>
+</html>

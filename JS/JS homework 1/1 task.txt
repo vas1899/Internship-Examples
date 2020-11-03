@@ -1,0 +1,28 @@
+1.
+ The ?? Operator.
+ It sovles a problem when the || operator has been used instead of it in the past
+ because when you try to assign a default value if the input is undefined or null:
+ const a = 0 || 'default string'; // a will be default string
+
+ it assigns it even if the value is 0 empty string or false
+ with ?? that problem is solved.
+ const a = 0 ?? 'default string'// a will be 0
+ Pretty decent support, most lastest updates of the major browsers support it.
+
+2.
+ The ?. Operator.
+ If we are using data from HTML like:
+ const txtName = document.getElementById("txtName");
+ the element may not exist.
+ That is why const txt = txtName ? txtName.value : 'undefined'
+
+ is used, but the ?. operator makes it shorter
+ const txt = txtName?.value;
+ It's basically the same as for nullish coalescing operator, 
+ so it is supported in every browser.
+
+3.
+ Since the global object can vary in diffrent environments
+ from now on we can use the globalThis instead of checking every time.
+ Though it is now considered a good practice to use global items at all. 
+ Pretty well supported in all major browsers.
