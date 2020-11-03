@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QgdcclJPZwZoFdZbGZewH+teQf9Jxgetsptqu4xQ/I2QKL/Wm7csz0/zqMtnKupfHeEomJtVo5iE0f3LKY+oGw==",
+  "dgSpecHash": "W6IY4Kxf9zxyQAkKLkPTVVUTYirf/kBPQ1mIzMY/Nnu5hOtLpJUujX17ASwX8URxorkXyDbNeM67JKYFJarkBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vasil\\Desktop\\intership\\ASP.NET\\5. Entity Framework - 1\\vasil-kolev\\Entity Framework\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
+  "projectFilePath": "C:\\Users\\Vasil\\Desktop\\intership\\Examples for Resume\\Internship-Examples\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vasil\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Vasil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

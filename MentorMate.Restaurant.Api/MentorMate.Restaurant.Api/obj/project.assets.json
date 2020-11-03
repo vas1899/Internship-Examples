@@ -5490,11 +5490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vasil\\Desktop\\intership\\ASP.NET\\5. Entity Framework - 1\\vasil-kolev\\Entity Framework\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Vasil\\Desktop\\intership\\Examples for Resume\\Internship-Examples\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
       "projectName": "MentorMate.Restaurant.Api",
-      "projectPath": "C:\\Users\\Vasil\\Desktop\\intership\\ASP.NET\\5. Entity Framework - 1\\vasil-kolev\\Entity Framework\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
+      "projectPath": "C:\\Users\\Vasil\\Desktop\\intership\\Examples for Resume\\Internship-Examples\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api.csproj",
       "packagesPath": "C:\\Users\\Vasil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vasil\\Desktop\\intership\\ASP.NET\\5. Entity Framework - 1\\vasil-kolev\\Entity Framework\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\obj\\",
+      "outputPath": "C:\\Users\\Vasil\\Desktop\\intership\\Examples for Resume\\Internship-Examples\\MentorMate.Restaurant.Api\\MentorMate.Restaurant.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
